@@ -22,3 +22,5 @@ const url = "https://sakshi.com/%20/login"
 console.log(url.replace('%20',"__"))
 console.log(url.includes('sakshi'))
 console.log(url.includes('shalini'))
+
+//convert string to the array 
