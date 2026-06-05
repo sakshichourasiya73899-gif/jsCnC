@@ -23,4 +23,12 @@ console.log(url.replace('%20',"__"))
 console.log(url.includes('sakshi'))
 console.log(url.includes('shalini'))
 
+
+//access charracters in a string 
+let temp = "Sakshi"
+
+console.log(name.charAt(1))
+console.log(name[1])
+console.log(name[0])
+//what is Object.defineProperty()??
 //convert string to the array 
