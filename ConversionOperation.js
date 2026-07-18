@@ -4,3 +4,7 @@
   console.log(Number(score))
   console.log(typeof(score))
   console.log(score)
+
+
+
+  
