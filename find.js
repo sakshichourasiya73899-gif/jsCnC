@@ -19,7 +19,7 @@ function myfind(arr,callback){
 let result = myfind([1,2,10,12,16,19],show)
 console.log(result);
 
-//using find method
+//using find method and findIndex and some
 let arr = [2,3,4,5,6]
 let found = arr.find((value)=>{
     return value>3
@@ -28,5 +28,11 @@ let foundindex = arr.findIndex(function(value){
     return value>3;
 })
 console.log(found,foundindex)
+let foundSome = arr.some(value=>{
+    return(value<0)
+})
+console.log(foundSome)
 
-//findindex
+
+
+
