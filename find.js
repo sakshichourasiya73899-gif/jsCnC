@@ -24,4 +24,9 @@ let arr = [2,3,4,5,6]
 let found = arr.find((value)=>{
     return value>3
 })
-console.log(found)
+let foundindex = arr.findIndex(function(value){
+    return value>3;
+})
+console.log(found,foundindex)
+
+//findindex
