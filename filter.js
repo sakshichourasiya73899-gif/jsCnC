@@ -17,3 +17,11 @@ function myfilter(arr,callback){
 
 let ans = myfilter([2,4,6,9,3],show)
 console.log(ans)
+
+
+//using filter method
+let number = [2,3,4,5,6]
+let evenNumber = number.filter(function(value){
+    return (value%2==0)
+})
+console.log(evenNumber)
