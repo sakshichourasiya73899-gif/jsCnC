@@ -52,6 +52,21 @@ console.log(fruits)
 
 fruits.length = 10;
 console.log(fruits);
-console.log(f)
+let arr = [10,20,30,40,50]
+console.log(arr.slice(1,4))
+console.log(arr)
+let arr1 = [10,20,30,40,50]
+console.log(arr1.splice(1,3))
+console.log(arr1)
+console.log(arr.reverse())//mutating method
+console.log(arr)
+console.log(arr.sort())//mutating method
+console.log(arr)
+
+
+
+
+
+
 
  
