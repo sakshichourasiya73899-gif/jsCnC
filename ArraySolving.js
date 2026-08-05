@@ -19,7 +19,7 @@ let marks = [35, 48, 92, 81, 27];
 // })
 // console.log(PassedStudents)
 
-let passed = marks.filter((mark,index)=>{
+let passed = marks.map((mark,index)=>{
     return (mark>=40)
    
  }
@@ -61,3 +61,9 @@ let num2 = [5,10,15,10]
 let firstOccurence2 = num2.find(num=>num==10)
 console.log(firstOccurence2)
 
+// Learn what it does.
+// Understand why it works that way.
+// Write it from memory without looking at notes.
+// Solve 8–15 small problems using only that method.
+
+// That fourth step is where confidence comes from.
