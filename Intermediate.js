@@ -11,7 +11,7 @@ const users = [
     {
         id: 1,
         name: "Alice",
-        age: 20,
+        age: 45,
         city: "Delhi",
         isActive: true,
         role: "User"
@@ -35,5 +35,5 @@ const users = [
 ];
 
 
-let ActiveUsers = users.filter(user=>user.isActive==true).map(user=>user.name)
+let ActiveUsers = users.filter(user=>user.isActive==true).sort((a,b)=>a.age-b.age).map(user=>user.name).sort(user=>user.age)
 console.log(ActiveUsers)
