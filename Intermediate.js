@@ -61,3 +61,18 @@ let InstockProducts = products.filter(pro=>pro.inStock==true).reduce((acc,curr)=
     return acc+curr.price
 },0)
 console.log(InstockProducts)
+
+let employees = [
+    { name: "Alice", salary: 50000 },
+    { name: "Bob", salary: 30000 },
+    { name: "Charlie", salary: 70000 }
+];
+
+let IncreaseSalary = employees.reduce((acc,curr)=>{
+    return curr.salary+curr.salary*10/100+acc;
+},0)
+console.log(IncreaseSalary)
+let SalaryInc = employees.map(emp=>emp.salary*0.10+emp.salary).reduce((acc,curr)=>{
+    return acc+curr;
+},0)
+console.log(SalaryInc)
