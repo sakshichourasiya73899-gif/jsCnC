@@ -31,3 +31,19 @@ let users = [
     }
 ];
 
+let filerUser = users.filter(user=>{
+  return user.premium==true
+}
+).sort((a,b)=>{
+  return (a.orders-b.orders)
+}).reverse()
+console.log(filerUser)
+let nums = [2,3,4,5]
+let reversed = nums.reduce((acc,curr)=>{
+   acc.unshift(curr)
+    console.log(acc)
+   return acc;
+  
+   
+},[])
+//console.log(reversed)
