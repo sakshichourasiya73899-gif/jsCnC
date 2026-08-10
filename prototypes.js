@@ -34,7 +34,13 @@ console.log(Object.values(user))
 console.log(user)
 console.log(typeof user)
 console.log({...user})
+console.log(Object.hasOwn( transactions[0],"amount"))
 
 
+if(Object.hasOwn((transactions[0]),"amount")){
+    console.log("Amount Exists"+ (Object.entries(transactions[0])))
+}
 
-
+if(Object.hasOwn((transactions[0]),"amount")){
+    console.log("Amount Exists",(transactions[0]))
+}
