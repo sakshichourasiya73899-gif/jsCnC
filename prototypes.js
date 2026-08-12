@@ -44,3 +44,19 @@ if(Object.hasOwn((transactions[0]),"amount")){
 if(Object.hasOwn((transactions[0]),"amount")){
     console.log("Amount Exists",(transactions[0]))
 }
+const basicInfo = {
+    name: "Sakshi",
+    email: "sakshi@example.com"
+};
+const financialInfo = {
+    currency: "INR",
+    monthlyBudget: 20000
+};
+console.log(basicInfo==Object.assign(basicInfo,financialInfo))
+//console.log(Object.assign(basicInfo,financialInfo))
+//console.log(basicInfo,...financialInfo)
+const combineInfo = {
+    ...basicInfo,
+    ...financialInfo
+}
+console.log(financialInfo==combineInfo)
