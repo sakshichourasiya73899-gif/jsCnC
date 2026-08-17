@@ -34,5 +34,20 @@ const products = [
 ];
 
 
-const firstProduct = products[0];
-console.log(firstProduct.price);
+// const firstProduct = products[0];
+// console.log(firstProduct.price);
+
+//destructuring
+
+
+const [firstProduct] = products;
+console.log(firstProduct)
+
+const [, secondProduct] = products;
+console.log(secondProduct)
+
+const[FirstProduct,SecondProduct,ThirdProduct] = products;
+console.log(FirstProduct,SecondProduct,ThirdProduct)
+
+const[{name,price}, ,{id}] = products;
+console.log({name,price},{id})
