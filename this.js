@@ -28,3 +28,19 @@ function show() {
 }
 
 show();
+
+
+
+
+const person = {
+    name:"sakshi"
+}
+
+function testuser(user){
+    console.log(user === person)
+    user.name = "Shalini"
+    console.log(user)
+    console.log(user===person)
+}
+
+testuser(person)
