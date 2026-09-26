@@ -1,5 +1,15 @@
+
+
+
 const user = {
-    name: "Sakshi"
+    name: "Sakshi",
+    address: {
+        city: "Delhi"
+    }
 };
 
-console.log(Object.getPrototypeOf(user));
+const copy = {...user}
+user.name = "Shalini"
+copy.address = "mumbai"
+console.log(user)
+console.log(copy)
