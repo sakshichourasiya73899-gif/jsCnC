@@ -1,39 +1,49 @@
-// const user = {
-//     name:"Sakshi",
-//     age:"21",
-//     isloggedIn:"true"
-// }
-
-//const result = array.filter(callback)
-
-// const users = ["Sakshi", "Rohit", "Aman"];
-
-// users.filter((user, index, array) => {
-//     console.log(user);
-//     console.log(index);
-//     console.log(array);
-// });
-
-const name = ["sakshi","shalini","anuska"]
-console.log( name.filter(name=>{
-   return name[0]=="shalini"
- }))
-
- //check if it's mutating 
- //does it return new array
-
-//  const values = [0,1,"" ,"hello",null,undefined,{},[]]
-//  const result = values.filter(value=>value)
-//  console.log(result)
+//Array() is the Array Constructor
 
 
- const user = [
-    {name:"A", active:true},
-    {name:"B", active:false}
- ];
+const arr = new Array(10,20,30,40)
+console.log(arr)
 
- const activeUsers = user.filter(user=>user.active);
- activeUsers[0].name = "changed"
-console.log(user[0]===activeUsers[0])
- console.log(user)
- console.log(activeUsers)
+const arr1 = Array(10,20,30,40)
+console.log(arr1)
+
+
+const arr2 = new Array(5,3)
+console.log(arr2)
+console.log(arr2.length)
+
+
+const arr3 = Array.of(5)
+console.log(arr3)
+const arr4 = Array.of(2,3,4,5)
+console.log(arr4)
+console.log(arr.length)
+
+
+const str = "hello"
+const arrstr = Array.from(str)
+console.log(arrstr)
+
+
+
+const original = [2,3,4,5,6]
+const newarray = Array.from(original)
+console.log(newarray)
+console.log(original===newarray)
+
+
+//Slice
+//It can make a shallow copy
+//doesn't mutate the original array
+const or = [1,2,3,4,5]
+const copy = or.slice()
+console.log(copy)
+console.log(or === copy)
+
+//difference between slice and spread
+//slice : take the element of this iterable and spread them here.
+//  Extract a portion of an array 
+
+
+
+
