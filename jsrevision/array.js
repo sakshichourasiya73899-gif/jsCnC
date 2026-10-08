@@ -199,16 +199,16 @@
 
 //accumulator can produce objects as well 
 
-let numbers = [1,2,3,4]
-let result  = numbers.reduce((acc,num)=>{
-    acc.sum+=num;
-    acc.count++;
-   return acc;
-},
-{
-    sum:0,
-    count:0
-})
+// let numbers = [1,2,3,4]
+// let result  = numbers.reduce((acc,num)=>{
+//     acc.sum+=num;
+//     acc.count++;
+//    return acc;
+// },
+// {
+//     sum:0,
+//     count:0
+// })
 
 
 // learn more on these topics later
@@ -228,6 +228,12 @@ let result  = numbers.reduce((acc,num)=>{
 // keys()
 // values()
 // entries()
+
+
+
+//practice first round
+
+
 
 
 
