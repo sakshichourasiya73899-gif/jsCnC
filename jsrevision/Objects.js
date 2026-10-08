@@ -81,17 +81,71 @@
 //Level 2 - Object Utilites
 //Object.Keys()
 
-const ObjUser = {
-     name:"Sakshi",
-     age:21,
-     role:"developer"
-}
-const result = Object.keys(ObjUser)
-console.log(Array.isArray(result))
-console.log(Object.keys(ObjUser))
-console.log(Object.keys(ObjUser).length)
-Object.keys(ObjUser).forEach(key=>{
-    console.log(key)
+// const ObjUser = {
+//      name:"Sakshi",
+//      age:21,
+//      role:"developer"
+// }
+// const result = Object.keys(ObjUser)
+// console.log(Array.isArray(result))
+// console.log(Object.keys(ObjUser))
+// console.log(Object.keys(ObjUser).length)
+// Object.keys(ObjUser).forEach(key=>{
+//     console.log(key)
+// })
+
+// const user = {
+//     name:"Sakshi",
+//     age:21,
+//     role:"developer"
+// }
+
+// console.log(Object.values(user))
+//  const user = {
+//     name: "Sakshi",
+//     age: 21,
+//     role: "developer"
+// };
+// Object.entries(user).forEach(([key , value])=>{
+//     console.log(key,value);
+// })
+// const user ={
+//     name:"Sakshi",
+//     age:21,
+//     role:"developer"
+// }
+// console.log(Object.entries(user))
+
+//Object.assign()
+// const user = {
+//     name:"sakshi",
+//     age:21
+// }
+
+// const copy = Object.assign({},user)
+// console.log(copy)
+// console.log(user === copy)
+
+//Merging
+// const user = {
+//     name: "Sakshi"
+// };
+
+// const details = {
+//     age: 21,
+//     role: "developer"
+// };
+
+// const result = Object.assign({},user,details)
+// console.log(result)
+// Object.groupBy()
+const students = [
+    { name: "A", marks: 80 },
+    { name: "B", marks: 40 },
+    { name: "C", marks: 90 },
+    { name: "D", marks: 35 }
+];
+const result = Object.groupBy(students,student=>{
+    return student.marks>=50?"passed":"failed";
 })
-
-
+console.log(result)
