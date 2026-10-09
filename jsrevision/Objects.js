@@ -162,19 +162,62 @@
 
 // Object.defineProperty()
 
-const user = {
-    name:"sakshi",
-    age:"21"
-}
-Object.defineProperty(user,"id",{
-    value : 101,
-    enumerable:false,
-    writable : false,
-    configurable : false
-})
-delete user.name;
-console.log(Object.keys(user))
-console.log(user.name)
-// user.name = "shalini"
+// const user = {
+//     name:"sakshi",
+//     age:"21"
+// }
+// Object.defineProperty(user,"id",{
+//     value : 101,
+//     enumerable:false,
+//     writable : false,
+//     configurable : false
+// })
+// delete user.name;
+// console.log(Object.keys(user))
 // console.log(user.name)
-console.log(user)
+// // user.name = "shalini"
+// // console.log(user.name)
+// console.log(user)
+
+
+// const person = {
+//     firstName : "Sakshi",
+//     lastName : "Chourasiya",
+//     get fullname(){
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// console.log(person.fullname)
+
+// const rectangle ={
+//     width : 10,
+//     height : 20,
+
+//     get area(){
+//          return this.width * this.height;
+//     }
+
+// }
+
+// console.log(rectangle.area)
+
+const product = {
+    _price:0,
+
+    set price(value){
+        if(value < 0){
+            throw new Error(" Price Cannot be negative")
+        }
+        this._price = value;
+    },
+    get price() {
+        return this._price;
+    }
+};
+
+product.price = 500;
+console.log(product.price); 
+
+
+
