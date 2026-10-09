@@ -139,13 +139,42 @@
 // const result = Object.assign({},user,details)
 // console.log(result)
 // Object.groupBy()
-const students = [
-    { name: "A", marks: 80 },
-    { name: "B", marks: 40 },
-    { name: "C", marks: 90 },
-    { name: "D", marks: 35 }
-];
-const result = Object.groupBy(students,student=>{
-    return student.marks>=50?"passed":"failed";
+// const students = [
+//     { name: "A", marks: 80 },
+//     { name: "B", marks: 40 },
+//     { name: "C", marks: 90 },
+//     { name: "D", marks: 35 }
+// ];
+// const result = Object.groupBy(students,student=>{
+//     return student.marks>=50?"passed":"failed";
+// })
+// console.log(result)
+
+// const user = {};
+// Object.defineProperty(user,"id",{
+//     value:101,
+//     writable:false
+// })
+
+// user.id = 999;
+// console.log(user.id)
+
+
+// Object.defineProperty()
+
+const user = {
+    name:"sakshi",
+    age:"21"
+}
+Object.defineProperty(user,"id",{
+    value : 101,
+    enumerable:false,
+    writable : false,
+    configurable : false
 })
-console.log(result)
+delete user.name;
+console.log(Object.keys(user))
+console.log(user.name)
+// user.name = "shalini"
+// console.log(user.name)
+console.log(user)
